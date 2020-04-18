@@ -1,0 +1,60 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example app for jest-swag",
+  "main": "index.js",
+  "author": "Philip Yu <ht.yu@me.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "swagger": "jest && cat swagger.json && node index.js"
+  },
+  "jest": {
+    "testEnvironment": "../lib/Environment.js",
+    "roots": [
+      "<rootDir>/test/"
+    ],
+    "clearMocks": true,
+    "setupFilesAfterEnv": [
+      "./test/supports/init.js",
+      "jest-swag/setup"
+    ],
+    "testPathIgnorePatterns": [
+      "dist",
+      "test/supports"
+    ],
+    "reporters": [
+      "default",
+      "jest-swag/reporter"
+    ],
+    "coverageReporters": [
+      "html",
+      "text",
+      "text-summary"
+    ],
+    "automock": false
+  },
+  "jest-swag": {
+    "schema": {
+      "openapi": "3.0.0",
+      "info": {
+        "title": "Example API",
+        "description": "An example on using jest-swag to generate api docs with jest test",
+        "version": "1.0.0"
+      },
+      "host": "example.com",
+      "schemes": [
+        "http"
+      ]
+    }
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest-swag": "https://github.com/Seitk/jest-swag"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
+}
