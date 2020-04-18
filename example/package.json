@@ -12,7 +12,7 @@
     "swagger": "jest && cat swagger.json && node index.js"
   },
   "jest": {
-    "testEnvironment": "../lib/Environment.js",
+    "testEnvironment": "jest-swag/environment",
     "roots": [
       "<rootDir>/test/"
     ],
