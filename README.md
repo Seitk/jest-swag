@@ -1,11 +1,12 @@
 # jest-swag
 
+[![npm version](https://badge.fury.io/js/jest-swag.svg)](https://badge.fury.io/js/jest-swag)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
   
 ## Installation
   
 ```bash
-$ yarn add https://github.com/Seitk/jest-swag
+$ yarn add jest-swag
 ```
   
 ## Introduction

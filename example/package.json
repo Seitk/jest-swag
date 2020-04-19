@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "jest-swag": "https://github.com/Seitk/jest-swag"
+    "jest-swag": "^0.0.1"
   },
   "devDependencies": {
     "jest": "^25.3.0"

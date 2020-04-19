@@ -2200,9 +2200,10 @@ jest-snapshot@^25.3.0:
     pretty-format "^25.3.0"
     semver "^6.3.0"
 
-"jest-swag@https://github.com/Seitk/jest-swag":
-  version "1.0.0"
-  resolved "https://github.com/Seitk/jest-swag#a7cf6c0be5acde1c967a2efdf2c5b472f77c6956"
+jest-swag@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/jest-swag/-/jest-swag-0.0.1.tgz#695b2e52c87ab6c84af7e4e2ba9208e796414cae"
+  integrity sha512-n1sRjhY97pPtW5dD+M4LBtyn5pcvw5+2mFe+d6QX8zaMwTxmpaWVP8RaE94X7N+VvKNLN3uEsaveFpZSjwBI7w==
 
 jest-util@^25.3.0:
   version "25.3.0"
